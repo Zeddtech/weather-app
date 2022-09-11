@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Weather app that fetches current and future real time weather data of over 2000 cities" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="zedTech weather forecast app" />
+    <meta property="og:image" content="/favicon.ico" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="zedTech weather forecast app" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="description" content="Weather app that fetches current and future real time weather data of over 2000 cities" />
+  
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- theme-color -->
+    <meta name="theme-color" content="#fafafa" />
+    <!-- icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/vendor/moment.js"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js" defer></script>
+    <script src="js/utiils.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
+    
+    
+    <title>WeatherGeeks</title>
+  </head>
+
+  <body>
+    <header>
+      <nav><img src="favicon.ico" alt="weathergeeks logo">WeatherGeeks</nav>
+    </header>
+    <div class="loader">
+      <div class="lds-hourglass"></div>
+      <p>Loading ...</p>
+    </div>
+
+    <div class="weather-app">
+      <section>
+        <div class="wrapper">
+          <div class="right-bar">
+            <div class="header">
+              <div class="city">san fransisco</div>
+
+              <div class="weather">
+                <h1 class="current-temp">18&deg;</h1>
+                <div class="weather-condition">
+                  <img
+                    src="http://openweathermap.org/img/wn/10d@2x.png"
+                    alt=""
+                  />
+                  <p>cloudy</p>
+                </div>
+              </div>
+              <div class="date">
+                <p>
+                  <span class="time"> 8:00 AM </span>
+                  -
+                  <span class="date"> Monday, May 2nd </span>
+                </p>
+              </div>
+            </div>
+            <!-- parameters -->
+            <div class="parameters">
+              <!-- humidity -->
+              <div class="humidity param-box">
+                <i class="bx bx-droplet"></i>
+                <div class="param-body">
+                  <p class="param-name">humidity</p>
+                  <p class="param-value">13%</p>
+                </div>
+              </div>
+              <!-- pressure -->
+              <div class="pressure param-box">
+                <i class="bx bx-tachometer"></i>
+                <div class="param-body">
+                  <p class="param-name">pressure</p>
+                  <p class="param-value">13%</p>
+                </div>
+              </div>
+              <!-- wind speed -->
+              <div class="wind param-box">
+                <i class="bx bx-wind"></i>
+                <div class="param-body">
+                  <p class="param-name">wind speed</p>
+                  <p class="param-value">13%</p>
+                </div>
+              </div>
+            </div>
+            <!-- sun rise and fall -->
+            <div class="sun-box">
+              <div class="sun-rise-con">
+                <div class="sun-rise"></div>
+                <p class="sun-rise">07:00 am</p>
+              </div>
+              <div class="sun-set-con">
+                <div class="sun-set"></div>
+                <p class="sun-set">07:00 pm</p>
+              </div>
+            </div>
+            <!-- <div class="clearfix"></div> -->
+            <div class="hourly-forecast">
+              <div class="slider hours"></div>
+            </div>
+
+            <div class="daily-forecast">
+              <h4><i class="bx bx-calendar bx-tada"></i> 7- DAYS FORECAST</h4>
+              <div class="days"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="left-bar">
+        <div class="search-box">
+          <form action="" class="form">
+            <button type="submit" class="btn-search">
+              <i class='bx bx-search ' ></i>
+            </button>
+            <input
+              type="text"
+              class="input-search"
+              placeholder="Type to Search Location..."
+            />
+          </form>
+          <div class="content">
+            <ul>
+              <li class="city"><a class="city-el" href="#">Ikeja</a></li>
+              <li class="city"><a class="city-el" href="#">Onitsha</a></li>
+              <li class="city"><a class="city-el" href="#">Chicago</a></li>
+              <li class="city"><a class="city-el" href="#">Cambridge</a></li>
+              <li class="city"><a class="city-el" href="#">Beijing</a></li>
+              <li class="city"><a class="city-el" href="#">Manila</a></li>
+              <li class="city"><a class="city-el" href="#">Pretoria</a></li>
+            </ul>
+            <div class="thm-btn close-search">close</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

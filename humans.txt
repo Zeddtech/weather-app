@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+developer:Agwunobi  sopulu
+	Contact: Agwunobisopulu@gmail.com
+	Twitter: @SO_nwa
+	From:Anambra, Nigeria, Spain, west africa
+
+
+# THANKS
+
+   To my Creator
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, javascript,
+  Git, Github,Modernizr, Normalize.css
