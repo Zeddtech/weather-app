@@ -34,7 +34,7 @@ slider.forEach((slider) => {
   });
   slider.addEventListener("wheel", (evt) => {
     evt.preventDefault();
-    slider.scrollLeft += evt.deltaY;
+    slider.scrollLeft += evt.deltaY/2;
   });
 });
 // round to the nearest integer
