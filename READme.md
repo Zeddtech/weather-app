@@ -30,7 +30,7 @@ A weather app that pulls from the OpenWeatherMap API to allow users to search fo
 
 ## Getting Started
 
-1. `git clone https://github.com/madzadev/weather-app.git`
+1. `git clone git@github.com:detrinity27/weather-app.git`
 
 2.  Log-in to [Openweathermap.com](https://openweathermap.org/)
 
