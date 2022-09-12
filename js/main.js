@@ -142,7 +142,7 @@ function render(cityname, state, country, weatherInfo) {
       weatherInfo.current.temp
     )}&deg;</h1>
     <div class="weather-condition">
-     <img src="http://openweathermap.org/img/wn/${
+     <img src="https://openweathermap.org/img/wn/${
        weatherInfo.current.weather[0].icon
      }@2x.png" alt="${weatherInfo.current.weather[0].description}" title="${
     weatherInfo.current.weather[0].description
@@ -205,7 +205,7 @@ function render(cityname, state, country, weatherInfo) {
     if (indx != 0) {
       hour += `<div class="hourly">
   <p class="time">${moment.unix(el.dt).format("h:mm A")}</p>
-  <img src="http://openweathermap.org/img/wn/${
+  <img src="https://openweathermap.org/img/wn/${
     el.weather[0].icon
   }@2x.png" alt="${el.weather[0].description}" title="${
         el.weather[0].description
@@ -221,7 +221,7 @@ function render(cityname, state, country, weatherInfo) {
       day += `
       <div class="daily">
   <p class="day">${moment.unix(el.dt).format("ddd")}</p>
-  <img src="http://openweathermap.org/img/wn/${
+  <img src="https://openweathermap.org/img/wn/${
     el.weather[0].icon
   }@2x.png" alt="${el.weather[0].description}" title="${
         el.weather[0].description
