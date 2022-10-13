@@ -52,7 +52,7 @@ function getLocation() {
   if (navigator.geolocation) {
     var options = {
       timeout: 1000,
-      enableHighAccuracy: false,
+      enableHighAccuracy: true,
       maximumAge: 2000
     };
     navigator.geolocation.getCurrentPosition(successHandler, errorHandler, options);
@@ -295,7 +295,7 @@ function render(cityname, state, country, weatherInfo) {
       break;
 
     default:
-      weatherImg.style.backgroundImage = "url(../img/clouds.gif)";
+      weatherImg.style.backgroundImage = "url(./img/clouds.gif)";
       break;
   }
   weatherImg.style.opacity = 1;

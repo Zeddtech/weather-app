@@ -3,48 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Weather app that fetches current and future real time weather data of over 2000 cities" />
+    <meta
+      name="description"
+      content="Weather app that fetches current and future real time weather data of over 2000 cities"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- og -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="zedTech weather forecast app" />
+    <meta property="og:site_name" content="WeatherGeeks weather forecast app" />
     <meta property="og:image" content="/favicon.ico" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:title" content="zedTech weather forecast app" />
-    <meta property="og:url" content="" />
-    <meta property="og:description" content="description" content="Weather app that fetches current and future real time weather data of over 2000 cities" />
-  
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:title" content="WeatherGeeks weather forecast app" />
+    <meta property="og:url" content="https://weathergeeks.netlify.app/" />
+    <meta
+      property="og:description"
+      content="description"
+      content="Weather app that fetches current and future real time weather data of over 2000 cities"
+    />
+    <meta name="theme-color" content="#fafafa" />
+
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- theme-color -->
-    <meta name="theme-color" content="#fafafa" />
     <!-- icon -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- JAVASCRIPT -->
-
-    <script src="js/vendor/moment.js"></script>
-    <script src="js/vendor/modernizr-3.11.2.min.js" defer></script>
-    <script src="js/utiils.js" defer></script>
-    <script type="module" src="js/main.js" defer></script>
-    
-    
     <title>WeatherGeeks</title>
   </head>
 
   <body>
     <header>
-      <nav><img src="favicon.ico" alt="weathergeeks logo">WeatherGeeks</nav>
+      <nav><img src="favicon.ico" alt="weathergeeks logo" />WeatherGeeks</nav>
     </header>
     <div class="loader">
       <div class="lds-hourglass"></div>
@@ -61,7 +72,6 @@
               <div class="weather">
                 <h1 class="current-temp">18&deg;</h1>
                 <div class="weather-condition">
-                  
                   <p>cloudy</p>
                 </div>
               </div>
@@ -127,7 +137,7 @@
         <div class="search-box">
           <form action="" class="form">
             <button type="submit" class="btn-search">
-              <i class='bx bx-search ' ></i>
+              <i class="bx bx-search"></i>
             </button>
             <input
               type="text"
@@ -150,5 +160,12 @@
         </div>
       </div>
     </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/vendor/moment.js"></script>
+    <script src="js/vendor/modernizr-3.11.2.min.js" defer></script>
+    <script src="js/utiils.js" defer></script>
+    <script type="module" src="js/main.js" defer></script>
   </body>
 </html>

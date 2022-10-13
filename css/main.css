@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap'); */
 
 *,
 *::before,
@@ -193,7 +193,6 @@ textarea {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  -webkit-appearance: none;
   outline: none !important;
   background-color: var(--primary-blue-color);
   color: var(--text-light-primary--color);
