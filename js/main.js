@@ -51,7 +51,7 @@ function f(int) {
 function getLocation() {
   if (navigator.geolocation) {
     var options = {
-      timeout: 1000,
+      timeout: 10000,
       enableHighAccuracy: true,
       maximumAge: 2000
     };
