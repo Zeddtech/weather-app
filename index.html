@@ -43,11 +43,11 @@
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <!-- stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- icon -->
     <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      href="./css/boxicons.min.css"
       rel="stylesheet"
     />
     <title>WeatherGeeks</title>
@@ -63,62 +63,67 @@
     </div>
 
     <div class="weather-app">
+      <video muted autoplay loop >
+        <source src="./img/clear.mp4" type="video/mp4" />
+      </video>
       <section>
         <div class="wrapper">
           <div class="right-bar">
-            <div class="header">
-              <div class="city"></div>
+            <div class="videobg">
+              <div class="header">
+                <div class="city"></div>
 
-              <div class="weather">
-                <h1 class="current-temp">18&deg;</h1>
-                <div class="weather-condition">
-                  <p>cloudy</p>
+                <div class="weather">
+                  <h1 class="current-temp">18&deg;</h1>
+                  <div class="weather-condition">
+                    <p>cloudy</p>
+                  </div>
+                </div>
+                <div class="date">
+                  <p>
+                    <span class="time"> 8:00 AM </span>
+                    -
+                    <span class="date"> Monday, May 2nd </span>
+                  </p>
                 </div>
               </div>
-              <div class="date">
-                <p>
-                  <span class="time"> 8:00 AM </span>
-                  -
-                  <span class="date"> Monday, May 2nd </span>
-                </p>
-              </div>
-            </div>
-            <!-- parameters -->
-            <div class="parameters">
-              <!-- humidity -->
-              <div class="humidity param-box">
-                <i class="bx bx-droplet"></i>
-                <div class="param-body">
-                  <p class="param-name">humidity</p>
-                  <p class="param-value">13%</p>
+              <!-- parameters -->
+              <div class="parameters">
+                <!-- humidity -->
+                <div class="humidity param-box">
+                  <i class="bx bx-droplet"></i>
+                  <div class="param-body">
+                    <p class="param-name">humidity</p>
+                    <p class="param-value">13%</p>
+                  </div>
+                </div>
+                <!-- pressure -->
+                <div class="pressure param-box">
+                  <i class="bx bx-tachometer"></i>
+                  <div class="param-body">
+                    <p class="param-name">pressure</p>
+                    <p class="param-value">13%</p>
+                  </div>
+                </div>
+                <!-- wind speed -->
+                <div class="wind param-box">
+                  <i class="bx bx-wind"></i>
+                  <div class="param-body">
+                    <p class="param-name">wind speed</p>
+                    <p class="param-value">13%</p>
+                  </div>
                 </div>
               </div>
-              <!-- pressure -->
-              <div class="pressure param-box">
-                <i class="bx bx-tachometer"></i>
-                <div class="param-body">
-                  <p class="param-name">pressure</p>
-                  <p class="param-value">13%</p>
+              <!-- sun rise and fall -->
+              <div class="sun-box">
+                <div class="sun-rise-con">
+                  <div class="sun-rise"></div>
+                  <p class="sun-rise">07:00 am</p>
                 </div>
-              </div>
-              <!-- wind speed -->
-              <div class="wind param-box">
-                <i class="bx bx-wind"></i>
-                <div class="param-body">
-                  <p class="param-name">wind speed</p>
-                  <p class="param-value">13%</p>
+                <div class="sun-set-con">
+                  <div class="sun-set"></div>
+                  <p class="sun-set">07:00 pm</p>
                 </div>
-              </div>
-            </div>
-            <!-- sun rise and fall -->
-            <div class="sun-box">
-              <div class="sun-rise-con">
-                <div class="sun-rise"></div>
-                <p class="sun-rise">07:00 am</p>
-              </div>
-              <div class="sun-set-con">
-                <div class="sun-set"></div>
-                <p class="sun-set">07:00 pm</p>
               </div>
             </div>
             <!-- <div class="clearfix"></div> -->

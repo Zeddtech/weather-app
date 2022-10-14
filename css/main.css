@@ -1,4 +1,3 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap'); */
 
 *,
@@ -17,7 +16,7 @@
 
 :root {
   --body-color: #fff;
-  --font-family--: 'Rubik', sans-serif;
+  --font-family--: "Rubik", sans-serif;
   --text-dark-primary--color: #00294b;
   /* --text-dark-primary--color: #0f141e; */
   --text-light-primary--color: #fff;
@@ -51,12 +50,22 @@ body {
   height: 100%;
   min-height: 100vh;
   position: relative;
-  background-image: url(../img/clear.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
   flex: 1;
-  transition: opacity .5s linear;
+  transition: opacity 0.5s linear;
+}
+.videobg {
+  position: relative;
+  margin-top: 78px;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 .weather-app::before {
   content: "";
@@ -483,15 +492,14 @@ p.sun-set {
 .daily {
   display: flex;
   justify-content: space-between;
-  border-top:1px solid var(--tex-gray-color) ;
+  border-top: 1px solid var(--tex-gray-color);
   align-items: center;
   padding: 10px 0;
-
 }
-.daily > *:not(img){
+.daily > *:not(img) {
   flex: 1;
 }
-.daily-forecast h4{
+.daily-forecast h4 {
   padding-bottom: 20px;
 }
 .hourly {
@@ -531,10 +539,9 @@ p.temp {
 .daily-forecast {
   background-color: rgba(110, 110, 110, 0.3);
   margin-top: 80px;
-margin-bottom: 30px;
-padding: 20px;
-border-radius: 10px;
-
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
 }
 /* left bar */
 .left-bar {
@@ -646,18 +653,18 @@ border-radius: 10px;
   padding: 5px 10px;
 }
 
-.loader{
+.loader {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: -1;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  flex-direction: column;
   /* display: none; */
 }
 
@@ -676,7 +683,8 @@ flex-direction: column;
   margin: 8px;
   box-sizing: border-box;
   border: 32px solid var(--primary-blue-color);
-  border-color: var(--primary-blue-color) transparent var(--primary-blue-color) transparent;
+  border-color: var(--primary-blue-color) transparent var(--primary-blue-color)
+    transparent;
   animation: lds-hourglass 1.2s infinite;
 }
 @keyframes lds-hourglass {
@@ -692,8 +700,6 @@ flex-direction: column;
     transform: rotate(1800deg);
   }
 }
-
-
 
 @media only screen and (max-width: 350px) {
   .wrapper {
@@ -760,17 +766,17 @@ flex-direction: column;
   }
 }
 @media only screen and (min-width: 576px) {
-  html{
+  html {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 768px) {
-  html{
+  html {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  html{
+  html {
     font-size: 16px;
   }
 }
