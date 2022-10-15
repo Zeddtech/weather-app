@@ -14,6 +14,7 @@ getLocation();
 function f(int) {
   return Math.round(int);
 }
+
 // get the user current location
 function getLocation() {
   if (navigator.geolocation) {
@@ -103,15 +104,19 @@ document.querySelector(".form").addEventListener("submit", (e) => {
 const cities = document.querySelectorAll(".city-el");
 cities.forEach((city) => {
   city.addEventListener("click", (e) => {
+
     e.preventDefault();
 
-    let city = e.currentTarget.innerText;
-    getcitycords(city);
+    let citytxt = e.currentTarget.innerText;
+    city.blur()
+    getcitycords(citytxt);
+
   });
 });
 
 function getcitycords(city) {
   weatherApp.style.opacity = 0;
+  input.blur()
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
   )
