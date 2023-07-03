@@ -1,5 +1,6 @@
 # Weather App
-A weather app that pulls from the OpenWeatherMap API to allow users to search for and view the current and future forecast in over 2000 cities
+
+A weather website that enables users to search and view current and future forecasts for over 2000 cities. With an intuitive interface, users can quickly find accurate weather information, including temperature, precipitation, wind speed, and humidity. It's a convenient tool for planning activities and staying prepared for any weather conditions.
 
 
 ## Features
